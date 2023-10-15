@@ -1,0 +1,16 @@
+{
+  "name": "aprendendo_tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "server": "live-server src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
