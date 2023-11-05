@@ -7,14 +7,103 @@
   <title>Conceitos fundamentais</title>
 </head
 <body>
-  <h1 class="text-pink-700 border-b border-transparent hover:border-b-neutral-700">Tudo é classe!</h1>
-  <button class="btn-blue">Brincando com CSS</button>
-  <button class="btn-green">Confirmação</button>
-  <button class="bg-red-800 hover:bg-red-500 text-white font-bold py-2 px-4 rounded">Cancelamento</button>
+  <div class="m-8">
+    <h1 class="text-pink-700 border-b border-transparent hover:border-b-neutral-700">Tudo é classe!</h1>
+    <button class="btn-blue">Brincando com CSS</button>
+    <button class="btn-green">Confirmação</button>
+    <button class="bg-red-800 hover:bg-red-500 text-white font-bold py-2 px-4 rounded">Cancelamento</button>
+  </div>
   <div class="w-4 md:w-6 h-4 md:h-6 m-4 bg-fuchsia-800 md:bg-blue-700 lg:bg-cyan-800">
-
     <div>
       <input type="text" placeholder="Clica em mim" class="bg-gray-300 text-gray-900 focus:bg-red-600 focus:text-red-900"/>
+    </div>
+  </div>
+  <div>
+    <h1>Aprendendo sobre Conteiners</h1>
+    <!-- Essa classe conteiner serve para abrigar outros elementos -->
+    <div class="conteiner bg-red-300 mx-auto p-4 my-4 text-red-900">
+      <p>O texto do conteiner</p>
+    </div>
+
+    <div class="conteiner bg-green-500 mx-auto p-4 my-4 text-white md:bg-blue-500">
+      <p>O texto do conteiner do exercicio</p>
+    </div>
+  </div>
+  <div>
+    <h1>Aprendendo Box sizing</h1>
+    <!--Com as classes border-box e box-content, podemos declarar como o elemento calcula o seu tamanho total-->
+    <!--o border-box a largura total soma o padding e borders-->
+    <!--o box-content temos uma largura menos o padding e borders-->
+    <div class="container m-4 bg-purple-700 border-box p-10 border-2 border-purple-950">
+      <p>Border Box esse se ajusta as bordas e paddings</p>
+    </div>
+    <div class="container m-4 bg-teal-700 box-content p-10 border-2 border-teal-950">
+      <p>Box Content esse acrescenta as bordas e paddings, ou seja, fica maior</p>
+    </div>
+  </div>
+  <div>
+    <!--Display: Block, Inline-block...-->
+    <div class="conteiner m-4">
+      <span class="block bg-pink-700">Nao sao elementos de bloco(span)</span>
+      <span class="block bg-pink-700">Nao sao elementos de bloco(span)</span>
+      <div class="bg-cyan-700 inline-block">e uma div</div>
+      <div class="bg-cyan-700 inline-block">e uma div</div>
+      <div class="bg-green-900 hidden">Estou aparecendo</div>
+    </div>
+  </div>
+
+  <div>
+    <!--Exercicio 2-->
+    <div class="conteiner m-6 bg-cyan-500 p-2">
+      <div class="inline-block bg-pink-950 text-white p-2">Primeira Div</div>
+      <div class="inline-block bg-purple-950 text-white p-2">Segunda Div</div>
+      <div class="inline-block bg-blue-950 text-white p-2">Terceira div</div>
+    </div>
+  </div>
+  <div>
+    <!--Overflow-->
+    <!--Como controlamos um elemento, ou seja, quando o conteudo de um elemento e muito grande para o mesmo-->
+    <!--Podemos criar ou eliminar o scroll-->
+    <div class="overflow-hidden h-16 m-6 bg-cyan-800">
+      <p>Testando overflow Hidden</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+    </div>
+    <div class="overflow-auto h-16 m-6 bg-pink-500">
+      <p>Testando overflow Auto</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+    </div>
+    <div class="overflow-x-auto h-16 m-6 bg-yellow-600">
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+    <div class="overflow-y-auto h-16 m-6 bg-purple-500">
+      <p>Testando overflow y-auto</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+    </div>
+  </div>
+
+  <div>
+    <!--Posicoes e direcoes-->
+    <!--Podemos controlar a posicao e a direcao de um elemento por classe tambem-->
+    <!--Temos o static, absolute, relative, etc...-->
+    <!--1rem = 16px (como default)-->
+    <div class="relative bg-pink-300">
+      teste
+      <!--O relative e o default, entao o absoluto vai ficar em relacao a div pai-->
+      <div class="absolute top-0 rigth-0 bg-pink-900">
+        Absolute
+      </div>
     </div>
   </div>
 </body>
