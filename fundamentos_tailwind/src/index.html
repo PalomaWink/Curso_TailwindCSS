@@ -103,9 +103,50 @@
       <!--O relative e o default, entao o absoluto vai ficar em relacao a div pai-->
       <!--O TW nao traz valores de top, rigth, etc como default, precisamos configurar isso-->
       <!--ou criar uma classe com isso configurado-->
-      <div class="absolute top-0 rigth-0 bg-pink-900">
+      <div class="absolute top-0 left-0 bg-pink-900">
         Absolute
       </div>
+    </div>
+  </div>
+
+  <div>
+    <!--Exercicio 3-->
+    <div class="conteiner h-10 m-10 relative bg-orange-700">
+      <div class="absolute bottom-0 left-0 bg-amber-500">Exercicio 3</div>
+    </div>
+  </div>
+
+  <div class="m-5">
+    <!--Visibility-->
+    <!--Podemos controlar a visibilidade de um elemento-->
+    <!--O hidden esconde o elemento-->
+    <!--O invisible deixa o elemento invisivel, mas ele ocupa o espaco-->
+    <!--Normalmente optam pelo display None, por que ai o elemento some mesmo da tela-->
+    <!--Parando de ocupar espaco-->
+    <div class="conteiner m-10">
+      <div class="bg-pink-700 visible">Teste</div>
+      <div class="bg-pink-700 hidden">Teste</div>
+      <div class="bg-pink-700 invisible">Teste</div>
+  </div>
+
+  <div class="m-5">
+    <!--z-index-->
+    <!--Podemos controlar a ordem de sobreposicao dos elementos-->
+    <!--O elemento com maior z-index fica por cima-->
+    <!--Os valores vao sempre de 10 em 10-->
+    <!--Da pra fazer um quadrado atras da minha foto, ou qualquer forma para meu portifolio-->
+    <div class="conteinter relative">
+      <div class="bg-blue-400 h-20 w-20 p-6 absolute z-10">Na frente</div>
+      <div class="bg-blue-600 h-20 w-20 p-6 absolute m-4">Atras</div>
+    </div>
+  </div>
+
+  <div class="m-64">
+    <!--Exercicio 4-->
+    <div class="conteiner relative">
+      <div class="absolute h-20 w-20 p-6 bg-pink-400 z-30 flex items-center justify-center">Primeira Div</div>
+      <div class="absolute h-20 w-20 p-6 bg-pink-600 m-4 z-20 flex items-center justify-center">Segunda Div</div>
+      <div class="absolute h-20 w-20 p-6 bg-pink-800 m-8 z-10 flex items-center justify-center">Tercera Div</div>
     </div>
   </div>
 </body>
