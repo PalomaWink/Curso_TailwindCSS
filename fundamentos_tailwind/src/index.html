@@ -228,5 +228,114 @@
 
   <!--Grid-->
   <!--Podemos controlar o grid com o grid-cols-x (onde x é o numero de colunas)-->
+  <div class="grid bg-red-500 grid-cols-3">
+    <div class="text-center">1</div>
+    <div class="text-center">2</div>
+    <div class="text-center">3</div>
+  </div><br><br><br><br><br>
+
+  <!--Exercicio 7-->
+  <div class="grid conteiner grid-cols-3">
+    <div class="text-center bg-pink-500">1</div>
+    <div class="text-center bg-pink-800">2</div>
+    <div class="text-center bg-pink-500">3</div>
+    <div class="text-center bg-pink-800">4</div>
+    <div class="text-center bg-pink-500">5</div>
+    <div class="text-center bg-pink-800">6</div>
+    <div class="text-center bg-pink-500">7</div>
+    <div class="text-center bg-pink-800">8</div>
+    <div class="text-center bg-pink-500">9</div>
+  </div><br><br><br><br><br>
+
+  <!--Tamanho das colunas, com a col-span-x podemos controlar o tamanho das colunas-->
+  <!--Onde x é o tamanho, baseado no número de colunas definido na classe pai-->
+  <!--Lembrando que essa classe vai nos elementos filhos do container de grid-->
+  <!--Da forma como fiz abaixo lembra muito um site com uma barra de navegação lateral-->
+  <div class="grid grid-cols-6 m-2">
+    <div class="col-span-1 bg-yellow-500">
+      <ul class="text-center">
+        <li class="m-2">Home</li>
+        <li class="m-2">Produtos</li>
+        <li class="m-2">Contatos</li>
+        <li class="m-2">Blog</li>
+      </ul>
+    </div>
+    <div class="col-span-5">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit quis perspiciatis ipsam magni fugiat animi a impedit illo, corporis fuga consequatur excepturi quibusdam, assumenda at non inventore eos. Consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quibusdam eligendi. Voluptate laudantium, commodi eaque, reiciendis neque id fugit totam reprehenderit expedita ab quo dicta non eum labore tempore laboriosam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae incidunt perspiciatis culpa inventore labore aliquam iure, eos beatae rerum quasi aut debitis voluptatem, autem ea eligendi reprehenderit neque sapiente sint!</p>
+    </div>
+  </div><br><br><br><br><br>
+
+  <div class="grid grid-cols-4 m-2">
+    <div class="col-span-1 bg-cyan-400">
+      <p>Barra lateral esquerda</p>
+    </div>
+    <div class="col-span-2 bg-cyan-600">
+      <p>Conteúdo</p>
+    </div>
+    <div class="col-span-1 bg-cyan-400">
+      <p>Barra lateral direita</p>
+    </div>
+  </div><br><br><br><br><br>
+
+  <!--Exercicio 8-->
+  <div class="grid grid-cols-4 bg-pink-900">Navegacao</div>
+  <div class="grid grid-cols-4">
+    <div class="col-span-1 bg-rose-600 text-center">
+      <ul class="m-2">1</ul>
+      <ul class="m-2">2</ul>
+      <ul class="m-2">3</ul>
+      <ul class="m-2">4</ul>
+      <ul class="m-2">5</ul>
+    </div>
+    <div class="col-span-3 bg-rose-300">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolore sed fugit asperiores ad deserunt unde numquam quam, eaque in explicabo maxime eum maiores cumque totam omnis? Ducimus, nemo! Vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ea unde reprehenderit error sequi, est corporis vero nihil iusto at incidunt harum quibusdam optio iste alias accusamus, nemo id! Veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias vitae perspiciatis nulla quaerat? Amet quia cumque soluta dolore explicabo, suscipit, impedit facilis dicta vel fuga, fugit possimus beatae aspernatur.</p>
+    </div>
+  </div><br><br><br><br><br>
+
+  <!--Quantidade de rows-->
+  <!--Podemos controlar a quantidade de rows com a classe grid-rows-x-->
+  <!--Onde x é o número de linhas que o container possuirá-->
+  <div class="grid grid-rows-4 grid-flow-col">
+    <div class="bg-green-400">1</div>
+    <div class="bg-green-500">2</div>
+    <div class="bg-green-600">3</div>
+    <div class="bg-green-700">4</div>
+    <div class="bg-green-800">5</div>
+    <div class="bg-green-900">6</div>
+    <div class="bg-green-300">7</div>
+    <div class="bg-green-200">8</div>
+  </div><br><br><br><br><br>
+
+  <!--Espaço entre colunas e linhas
+  Podemos controlar o espaço entre as colunas e linhas com a classe gap-x e gap-y
+  Onde x e y são os valores de espaçamento de acordo com o conteiner principal-->
+  <div class="grid grid-rows-4 grid-flow-col gap-2 m-4">
+    <div class="bg-green-300">1</div>
+    <div class="bg-green-400">2</div>
+    <div class="bg-green-500">3</div>
+    <div class="bg-green-600">4</div>
+    <div class="bg-green-700">5</div>
+    <div class="bg-green-800">6</div>
+    <div class="bg-green-900">7</div>
+    <div class="bg-green-950">8</div>
+  </div><br><br><br><br><br>
+
+  <!--Exercicio 9-->
+  <div class="grid grid-cols-2 grid-rows-3 gap-6 m-4">
+    <div class="bg-pink-400">1</div>
+    <div class="bg-pink-500">2</div>
+    <div class="bg-pink-600">3</div>
+    <div class="bg-pink-700">4</div>
+  </div><br><br><br><br><br>
+
+  <!-- Customização Tailwind
+  Podemos customizar o tailwind, através do arquivo tailwind.config.js
+  Podemos customizar as cores, fontes, tamanhos, etc
+  Temos algumas seções:
+  theme: onde podemos customizar as cores, fontes, tamanhos, etc
+  extend: fica dentro de theme, extensão das nossas classes do projeto
+  plugins: adicionar plugins de Tailwind externos
+  prefix: adiciona um prefico as classes Tailwind
+  Sempre quando alteramos o arquivo do tailwind precisamos dar o build de novo-->
 </body>
 </html>
