@@ -123,10 +123,11 @@
     <!--O invisible deixa o elemento invisivel, mas ele ocupa o espaco-->
     <!--Normalmente optam pelo display None, por que ai o elemento some mesmo da tela-->
     <!--Parando de ocupar espaco-->
-    <div class="conteiner m-10">
+    <div class="conteiner">
       <div class="bg-pink-700 visible">Teste</div>
       <div class="bg-pink-700 hidden">Teste</div>
       <div class="bg-pink-700 invisible">Teste</div>
+    </div>
   </div>
 
   <div class="m-5">
@@ -139,15 +140,93 @@
       <div class="bg-blue-400 h-20 w-20 p-6 absolute z-10">Na frente</div>
       <div class="bg-blue-600 h-20 w-20 p-6 absolute m-4">Atras</div>
     </div>
-  </div>
+  </div><br><br><br><br>
 
-  <div class="m-64">
+  <div class="m-5">
     <!--Exercicio 4-->
     <div class="conteiner relative">
       <div class="absolute h-20 w-20 p-6 bg-pink-400 z-30 flex items-center justify-center">Primeira Div</div>
       <div class="absolute h-20 w-20 p-6 bg-pink-600 m-4 z-20 flex items-center justify-center">Segunda Div</div>
       <div class="absolute h-20 w-20 p-6 bg-pink-800 m-8 z-10 flex items-center justify-center">Tercera Div</div>
     </div>
-  </div>
+  </div><br><br><br><br><br>
+
+  <div class="m-5">
+    <!--Flex Box-->
+    <!--Ao inserir o flex box conseguirmos controlar as direções dele com flex-row (linha) e flex-col(coluna)-->
+    <div class="flex fle-row bg-emerald-800">
+      <div class="bg-cyan-600 p-6 m-2">1</div>
+      <div class="bg-cyan-600 p-6 m-2">2</div>
+      <div class="bg-cyan-600 p-6 m-2">3</div>
+    </div>
+    <div class="flex flex-col bg-emerald-800">
+      <div class="bg-cyan-600 p-6 m-2">1</div>
+      <div class="bg-cyan-600 p-6 m-2">2</div>
+      <div class="bg-cyan-600 p-6 m-2">3</div>
+    </div>
+    <div class="flex flex-row-reverse bg-emerald-800">
+      <div class="bg-cyan-600 p-6 m-2">1</div>
+      <div class="bg-cyan-600 p-6 m-2">2</div>
+      <div class="bg-cyan-600 p-6 m-2">3</div>
+    </div>
+    <div class="flex flex-col-reverse bg-emerald-800">
+      <div class="bg-cyan-600 p-6 m-2">1</div>
+      <div class="bg-cyan-600 p-6 m-2">2</div>
+      <div class="bg-cyan-600 p-6 m-2">3</div>
+    </div>
+  </div><br><br><br><br><br>
+
+  <div class="m-5">
+    <!--Exercicio 5-->
+    <div class="flex flex-col bg-pink-800">
+      <div class="bg-rose-600 p-6 m-2">1</div>
+      <div class="bg-lime-600 p-6 m-2">2</div>
+      <div class="bg-orange-600 p-6 m-2">3</div>
+      <div class="bg-purple-600 p-6 m-2">4</div>
+      <div class="bg-blue-600 p-6 m-2">5</div>
+      <div class="bg-teal-600 p-6 m-2">6</div>
+    </div>
+  </div><br><br><br><br><br>
+
+<!--Wrap, ele controla como os itens se adaptarão ao container-->
+<!--Com o flex-no-wrap os itens tendem a ficar na mesma linha-->
+<!--Com o flex-wrap os itens vão se encaixar em linhas abaixo, conforme o tamanho do conteiner-->
+  <div class="flex flex-wrap bg-cyan-200">
+    <div class="bg-cyan-400 p-6 m-3">1</div>
+    <div class="bg-cyan-500 p-6 m-3">2</div>
+    <div class="bg-cyan-600 p-6 m-3">3</div>
+    <div class="bg-cyan-700 p-6 m-3">4</div>
+    <div class="bg-cyan-800 p-6 m-3">5</div>
+    <div class="bg-cyan-900 p-6 m-3">6</div>
+  </div><br><br><br><br><br>
+
+  <!--Flex esta e a regra flex para o elemento, onde podemos controlar seu tamanho minimo e maximo-->
+  <!--O flex-1 e o flex-grow: 1, flex-shrink: 1, flex-basis: 0-->
+  <div class="flex container bg-sky-700 p-8">
+    <div class="flex-1 bg-violet-400">1</div>
+    <div class="flex-1 bg-violet-500">2</div>
+    <div class="flex-none bg-violet-800">3</div>
+  </div><br><br><br><br><br>
+
+  <!--Order podemos controlar a ordem dos elementos, inserimos a ordem-x (onde x é o valor da propriedade order)-->
+  <!--order-1 = order: 1-->
+  <div class="flex flex-wrap bg-indigo-200">
+    <div class="bg-indigo-400 p-6 m-3 order-last">1</div>
+    <div class="bg-indigo-500 p-6 m-3 order-5">2</div>
+    <div class="bg-indigo-600 p-6 m-3 order-4">3</div>
+    <div class="bg-indigo-700 p-6 m-3 order-3">4</div>
+    <div class="bg-indigo-800 p-6 m-3 order-2">5</div>
+    <div class="bg-indigo-900 p-6 m-3 order-first">6</div>
+  </div><br><br><br><br><br>
+
+  <!--Exercicio 6-->
+  <div class="flex flex-wrap bg-pink-200">
+    <div class="bg-pink-400 p-6 m-3 lg:order-3">1</div>
+    <div class="bg-pink-500 p-6 m-3 lg:order-2">2</div>
+    <div class="bg-pink-600 p-6 m-3 lg:order-1">3</div>
+  </div><br><br><br><br><br>
+
+  <!--Grid-->
+  <!--Podemos controlar o grid com o grid-cols-x (onde x é o numero de colunas)-->
 </body>
 </html>
