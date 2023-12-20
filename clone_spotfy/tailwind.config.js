@@ -9,12 +9,9 @@ module.exports = {
       },
       colors: {
         'hoverspt': '#18D760',
-        'purple-main': '#bd27bc',
+        'purple-main': '#9C2FEC',
         'green-main': '#1ED760',
-        'purple-secundary': '#e032ad',
-        'gradient-primary': '#b023c2',
-        'gradient-secundary': '#921ad0',
-        'gradient-terciary': '#620ce6'
+        'highlight': '#8313D5',
       },
       backgroundImage: theme => ({
         'spotfy-theme': "url('https://www.scdn.co/i/free/bubbles-dktp.svg'), linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166))",
@@ -29,6 +26,7 @@ module.exports = {
       },
       fontSize: {
         '9xl': '9rem',
+        'lt': '0.6875rem',
       },
     },
   },
