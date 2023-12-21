@@ -12,6 +12,7 @@ module.exports = {
         'purple-main': '#9C2FEC',
         'green-main': '#1ED760',
         'highlight': '#8313D5',
+        'gray-main': '#efefef',
       },
       backgroundImage: theme => ({
         'spotfy-theme': "url('https://www.scdn.co/i/free/bubbles-dktp.svg'), linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166))",

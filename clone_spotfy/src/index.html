@@ -36,28 +36,81 @@
   </header>
   <!--CONTEUDO-->
   <main>
-    <section class="bg-purple-main text-white flex justify-center pt-20 md:px-60 px-4 overflow-auto mr-3">
-      <div class="flex flex-col justify-center leading-10" >
-        <h1 class="font-bold text-4xl mb-8">R$ 0,00 por 3 meses de Premium</h1>
-        <div class="leading-6 text-xl">
+    <section class="bg-purple-main text-white flex justify-center items-center px-10 pt-28 pb-8 h-3/6">
+      <div class="flex flex-col justify-center mr-6 w-2/5" >
+        <h1 class="font-bold text-3xl mb-4">Tá acabando: 3 meses de Premium por R$ 0,00</h1>
+        <div class="leading-8 text-xl">
           <h2>Curta músicas sem anúncios, ouça no modo offline e muito mais.
             Cancele quando quiser.
           </h2>
         </div>
-        <div class="mt-4">
-          <button class="bg-black rounded-full px-6 py-0 font-bold transition-transform transform hover:scale-105 mr-1">Experimente 3 meses por R$ 0,00</button>
-          <button class="border-white font-bold border-2 rounded-full px-6 transition-transform transform hover:scale-105 hover:bg-highlight">Ver planos</button>
+        <div class="text-xl mt-8">
+          <h2>A oferta termina em 10d: 9h: 16min.</h2>
         </div>
-        <div class="mr-4">
-          <p class="text-lt">Somente no plano Individual. Depois, é só R$ 21,90/mês. Sujeito a Termos e Condições. Disponível apenas para quem nunca usou o Premium. A oferta termina em 31/12/2023.</p>
+        <div class="mt-8">
+          <button class="bg-black rounded-full px-6 py-2 font-bold transition-transform transform hover:scale-105 mr-1">Experimente 3 meses por R$ 0,00</button>
+          <button class="border-white font-bold border-2 py-2 rounded-full px-6 transition-transform transform hover:scale-105 hover:bg-highlight">Ver planos</button>
+        </div>
+        <div class="mr-12 mt-10 leading-4 ">
+          <p class="text-lt ">Somente no plano Individual. Depois, é só R$ 21,90/mês. <u>Sujeito a Termos e Condições</u>. Disponível apenas para quem nunca usou o Premium. A oferta termina em 31/12/2023.</p>
         </div>
       </div>
-      <div>
-        <img src="./images/premium.jpeg" alt="Spotfy Premium" class="w-full"/>
+      <div class="flex justify-start ">
+        <img src="./images/premium.jpeg" alt="Spotfy Premium" class="w-80"/>
       </div>
     </section>
-    <div></div>
-    <div></div>
+    <section class="flex flex-col justify-center items-center px-10 pt-20 pb-8 h-3/6">
+      <h1 class="items-center font-bold text-3xl mb-5">Por que ser Premium?</h1>
+      <div class="flex justify-around mt-8">
+        <div class="flex flex-col items-center justify-center w-1/4 mr-4">
+          <img src="./images/primeiraImagem.png" alt="Modo offline" class="w-28 h-28" />
+          <p class="font-bold text-sm text-center mb-2 mt-5">Modo offline.</p>
+          <p class="text-xs text-center">Ouça músicas onde estiver.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-1/4 mr-4">
+          <img src="./images/segundaImage.png" alt="musicas sem anuncios" class="w-28 h-28" />
+          <p class="font-bold text-sm text-center mb-2 mt-5">Ouça músicas sem anúncios.</p>
+          <p class="text-xs text-center">Curta música sem anúncios.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-1/4 mr-4">
+          <img src="./images/terceiraImagem.png" alt="ouca na ordem que quiser" class="w-28 h-28" />
+          <p class="font-bold text-sm text-center mb-2 mt-5">Ouça na ordem que quiser.</p>
+          <p class="text-xs text-center">Qualquer música em qualquer ordem.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-1/4">
+          <img src="./images/quartaImagem.svg" alt="qualidade de som superior" class="w-28 h-28" />
+          <p class="font-bold text-sm text-center mb-2 mt-5">Qualidade de som superior.</p>
+          <p class="text-xs text-center">Sinta o som.</p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-main h-3/6">
+      <div class="mb-20">
+        <h1 class="text-center font-bold text-3xl mt-10">Escolha seu plano Premium</h1>
+        <p class="text-center text-sm mt-1">Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</p>
+        <div class="flex justify-center mt-4 relative group">
+          <img src="./images/visa.svg" alt="visa" class="h-5 w-5 mr-2" />
+          <img src="./images/mastercard.svg" alt="mastercard" class="h-5 w-5 mr-2" />
+          <img src="./images/amex.svg" alt="amex" class="w-5 h-5 mr-2" />
+          <img src="./images/elo.svg" alt="elo" class="w-5 h-5 mr-2" />
+          <img src="./images/hiper.svg" alt="hiper" class="w-5 h-5 mr-2" />
+          <p class="font-bold text-sm"><u>+ outros 11</u></p>
+          <div class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white p-4 border rounded shadow-lg w-36 grid grid-cols-4 gap-1 transition-opacity duration-300">
+            <img src="./images/itau.svg" alt="itau" class="w-5 h-5" />
+            <img src="./images/santander.svg" alt="santander" class="w-5 h-5" />
+            <img src="./images/bradesco.svg" alt="bradesco" class="w-5 h-5" />
+            <img src="./images/banco-do-brasil.svg" alt="banco do brasil" class="w-5 h-5" />
+            <img src="./images/caixa.svg" alt="caixa" class="w-5 h-5" />
+            <img src="./images/banco-inter.svg" alt="inter" class="w-5 h-5" />
+            <img src="./images/boleto.svg" alt="boleto" class="w-5 h-5" />
+            <img src="./images/nubank.svg" alt="nubank" class="w-5 h-5" />
+            <img src="./images/banco-original.svg" alt="original" class="w-5 h-5" />
+            <img src="./images/banco-next.svg" alt="banco next" class="w-5 h-5" />
+            <img src="./images/sicredi.svg" alt="sicredi" class="w-5 h-5" />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <!--FOOTER-->
 </body>
