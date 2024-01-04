@@ -8,11 +8,12 @@ module.exports = {
         '125px': '125px' //quando tem px no nome, é pq é um valor fixo
       },
       colors: {
-        'hoverspt': '#18D760',
+        'btn-planos': '#191414',
         'purple-main': '#9C2FEC',
         'green-main': '#1ED760',
         'highlight': '#8313D5',
         'gray-main': '#efefef',
+        'blue-main': '#0D72EA',
       },
       backgroundImage: theme => ({
         'spotfy-theme': "url('https://www.scdn.co/i/free/bubbles-dktp.svg'), linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166))",
